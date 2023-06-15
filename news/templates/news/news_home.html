@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %} 
+{% block title %}Stiri de pe site{% endblock%} 
+{% block content %}
+<div class="features">
+  <h1 class="news__title">Stiri de pe site</h1>
+  {% if news %}
+    {% for el in news %}
+        <div class="card">
+            <h3>{{el.title}}</h3>
+            <br>
+            <p>{{el.anons}}</p>
+            <br>
+            <a href="{% url 'news-detail' el.id %}" class="btn">Citeste mai mult</a>
+        </div>
+    {% endfor %}
+    {% else %}
+        <p>Nu exista nic-o Stire inca</p>
+    {% endif %}
+</div>
+
+{% endblock %}

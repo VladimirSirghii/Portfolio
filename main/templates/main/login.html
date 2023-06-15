@@ -1,0 +1,27 @@
+{% extends 'main/layout.html' %} 
+{% load static %}
+
+{% block content %}
+<div class="containers2">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 login-container">
+      <h2>Login</h2>
+      <br>
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter username">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <a href="{% url 'register' %}" class="btn btn-link btn-register">Create New Account</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

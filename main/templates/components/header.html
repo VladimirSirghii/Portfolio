@@ -1,0 +1,35 @@
+{% load static %}
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__wrap">
+      <div class="hamb">
+        <div class="hamb__field" id="hamb">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <a href="{% url 'home' %}" class="logo" id="logo">Logo</a>
+      <ul class="menu" id="menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'news_home' %}">News</a></li>
+        <li><a href="{% url 'create' %}">Create</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <button class="dark-mode-btn">
+          <img src="{% static 'main/img/icons/sun.svg' %}" alt="Light mode" class="dark-mode-btn__icon">
+          <img src="{% static 'main/img/icons/moon.svg' %}" alt="Dark mode" class="dark-mode-btn__icon">
+        </button>
+        {% if user.is_authenticated %}
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
+            <li><a href="{% url 'login' %}">Login</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="popup" id="popup"></div>
+<link rel="stylesheet" href="{% static 'main/css/header.css' %}" />
+<script src="{% static 'main/js/script.js' %}"></script>

@@ -1,0 +1,25 @@
+{% load static %}
+<footer class="footer">
+  <div class="container">
+      <div class="footer__wrapper">
+          <ul class="social">
+              <li class="social__item"><a href="#!"><img src="{% static 'main/img/icons/vk.svg' %}" alt="Link"></a></li>
+              <li class="social__item"><a href="#!"><img src="{% static 'main/img/icons/instagram.svg' %}"></a></li>
+              <li class="social__item"><a href="#!"><img src="{% static 'main/img/icons/twitter.svg' %}"></a></li>
+              <li class="social__item"><a href="#!"><img src="{% static 'main/img/icons/github.svg' %}"></a></li>
+              <li class="social__item"><a href="#!"><img src="{% static 'main/img/icons/linkedIn.svg' %}"></a></li>
+          </ul>
+          <div class="copyright">
+              <p>© 2022 frontend-dev.com</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Încărcarea etichetei pentru fișierele statice -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'main/css/footer.css' %}"
+/>
+<!-- Legătura către fișierul CSS -->
