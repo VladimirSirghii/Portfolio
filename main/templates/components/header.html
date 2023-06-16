@@ -14,9 +14,8 @@
         <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'news_home' %}">News</a></li>
         <li><a href="{% url 'create' %}">Create</a></li>
-        <li><a href="#">Blog</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
         <button class="dark-mode-btn">
           <img src="{% static 'main/img/icons/sun.svg' %}" alt="Light mode" class="dark-mode-btn__icon">
           <img src="{% static 'main/img/icons/moon.svg' %}" alt="Dark mode" class="dark-mode-btn__icon">

@@ -2,7 +2,8 @@
 {% load static %}
 
 {% block content %}
-<div class="containers2">
+<div class="features">
+  <div class="card">
   <div class="row">
     <div class="col-md-6 offset-md-3 login-container">
       <h2>Login</h2>
@@ -21,7 +22,8 @@
         <button type="submit" class="btn btn-primary">Login</button>
         <a href="{% url 'register' %}" class="btn btn-link btn-register">Create New Account</a>
       </form>
-    </div>
+      </div>
   </div>
+</div>
 </div>
 {% endblock %}

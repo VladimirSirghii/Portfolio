@@ -4,8 +4,11 @@
 <div class="features">
   <div class="card">
     <h1>{{ article.title }}</h1>
+    <br>
     <p>{{ article.date}}</p>
+    <br>
     <p>{{ article.full_text}}</p>
+    <br>
   <div class="more__btn">
     <a href="{% url 'news-delete' article.id %}" class="btn">Sterge</a>
     <a href="{% url 'news-update' article.id %}" class="btn">Modifica</a>

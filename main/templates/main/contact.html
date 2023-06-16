@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %} 
+{% block title %}{{title}}
+{% endblock %}
+{% block content %}
+{% load static %}
+<h1>Pagină de Contact</h1>
+<div class="features">
+    <div class="card">
+  <div class="contact-info">
+    <p><strong>Nume:</strong> Sirghii Vladimir</p>
+    <p><strong>Locație:</strong> Chisinau, Moldova</p>
+    <p><strong>Adresă:</strong> Strada Exemplu nr. 123, Chisinau</p>
+    <p><strong>E-mail:</strong> vladimirsirghii9@gmail.com</p>
+    <p><strong>Telefon:</strong> +1234567890</p>
+    <p><strong>Orar de lucru:</strong> Luni - Vineri, 9:00 - 17:00</p>
+    <p><strong>Social media:</strong></p>
+    <ul class="social-media">
+      <li><a href="https://www.facebook.com/vladimir.sirghii" target="_blank">Facebook</a></li>
+      <li><a href="https://twitter.com/vladimirsirghii" target="_blank">Twitter</a></li>
+      <li><a href="https://www.instagram.com/vladimirsirghii" target="_blank">Instagram</a></li>
+    </ul>
+  </div>
+  <form action="send-email.php" method="post" class="contact-form">
+    <h2>Trimite un mesaj</h2>
+    <label for="name">Nume:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Mesaj:</label>
+    <textarea id="message" name="message" required></textarea>
+    <input type="submit" value="Trimite">
+  </form>
+  </div>
+</div>
+{% endblock %}

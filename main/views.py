@@ -28,6 +28,9 @@ def about(request):
 def footer_view(request):
     return render(request, 'main/footer.html')
 
+def contact(request):
+    return render(request, 'main/contact.html')
+
 
 def download_cv(request):
     # Calea către fișierul PDF al CV-ului
