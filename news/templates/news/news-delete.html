@@ -1,12 +1,41 @@
 {% extends 'main/layout.html' %} 
 {% block title %}Stergerea Articului{% endblock%} 
 {% block content %}
+<br>
+<br>
+<br>
 <div class="features">
   <h1>Stergerea Articului</h1>
     <form method="post">
         {% csrf_token %}
+        <br>
+        <br>
+        <br>
         <button class="btn btn-success" type="submit">Sterge articolul</button>
+        <a href="{% url 'news_home' %}"><button class="btn btn-danger">Anulează</button></a>
     </form>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 {% endblock %}

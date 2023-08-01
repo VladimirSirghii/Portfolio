@@ -12,11 +12,14 @@
         <div class="header__text">
             <p>with passion for learning and creating.</p>
         </div>
-        <a href="{% url 'download_cv' %}" class="btn">Download CV</a>
-
+        <a href="{% url 'download_cv' %}"><button class="button2" type="button">Download CV</button></a>
+        <canvas id="canvas"></canvas>
     </div>
   </header>
   <div class="containers">
+    <br>
+    <br>
+    <br>
       <h2 class="title-1">Projects</h2>
       <ul class="projects">
           <li class="project">
@@ -56,7 +59,5 @@
   <br>
   <br>
   <br>
-    
-  <link rel="stylesheet" href="{% static 'main/css/index.css' %}" />
 
 {% endblock %}
